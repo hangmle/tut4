@@ -12,7 +12,7 @@ let i=0;
 
 switch (input) {
   case 'mon':
-    console.log(...);
+    console.log();
     break;
   default:
     console.log('Not a valid day');
