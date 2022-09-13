@@ -7,10 +7,12 @@ console.log("Le's Output from HW3 Example 2");
 const userName = prompt('Please type your name');
 var unit = prompt('How many units you have completed at college?');
 
-while ((typeof unit !== BigInt) || (unit < 0)) {
+// TRY if inside while
+
+if //((typeof unit !== 'bigint') || (unit < 0))
+  ((Number.isInteger(unit) !== true) && (unit < 0)) {
   unit = prompt(`Please input an appropriate number`);
-  var unit = unit;
-  break;
+  unit;
 }
 console.log(`Name: ${userName}, have completed ${unit} units`);
 alert(
