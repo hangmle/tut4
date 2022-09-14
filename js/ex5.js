@@ -10,11 +10,12 @@ for (let i = 0; i < 3; i) {
   if (pwd !== "secret") {
     var pwd = prompt('Enter your password again');
     i++;
-    if (i === 3) {
+    if ((i === 3) && (pwd !== "secret")) {
       console.log(`Your account is locked! You failed to enter the correct password ${i+1} times`);
     }
   }
-  else {
+  if (pwd === "secret") {
     console.log(`You entered the correct password after ${i} attempt(s)`)
+    break;
   }
 }
