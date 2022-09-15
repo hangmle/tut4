@@ -1,45 +1,48 @@
 /* HW3
-   Example 3 JavaScript code
+  Example 3 JavaScript code
 */
 
 console.log("Le's Output from HW3 Example 3");
+// input.slice(0, 3).toLowerCase()
 
-var input = prompt("Enter a day of the week");
-input = input.slice(0, 3).toLowerCase();
-console.log(input);
-
-let i=0;
+const input = prompt("Enter a day of the week (first 3 letters in lowercase)");
 
 switch (input) {
-  case 'mon':
-    console.log();
+  case "sun":
+    console.log(`
+    You entered: ${input}
+    The following day is: mon`);
+    break;
+  case "mon":
+    console.log(`
+    You entered: ${input}
+    The following day is: tue`);
+    break;
+  case "tue":
+    console.log(`
+    You entered: ${input}
+    The following day is: wed`);
+    break;
+  case "wed":
+    console.log(`
+    You entered: ${input}
+    The following day is: thu`);
+    break;
+  case "thu":
+    console.log(`
+    You entered: ${input}
+    The following day is: fri`);
+    break;
+  case "fri":
+    console.log(`
+    You entered: ${input}
+    The following day is: sat`);
+    break;
+  case "sat":
+    console.log(`
+    You entered: ${input}
+    The following day is: sun`);
     break;
   default:
     console.log('Not a valid day');
 }
-
-/** switch (day) {
-  case (day < 1):
-    console.log("You entered a value less than 1");
-    break;
-  case (num1 === 1):
-    console.log("You entered 1");
-    break;
-  case (num1 === 2):
-    console.log("You entered 2");
-    //break;
-  case (num1 === 3):
-    console.log("You entered 3");
-    break;
-  case (num1 > 3):
-    console.log("You entered a value > 3");
-    break;
-  default:
-    console.log("You did not enter a valid integer between 1 - 3");
-}
-
-console.log(
-  `You entered: ${day}
-  The following day is:`
-)
-*/
